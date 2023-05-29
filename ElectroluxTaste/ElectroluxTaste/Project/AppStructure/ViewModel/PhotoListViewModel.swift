@@ -12,7 +12,6 @@ import Toaster
 class PhotoListViewModel : ObservableObject {
     
     // MARK: - Propeties
-    //var photoGallery = Observer(value: [Photo]())
     @Published var isloading: Bool = false
     
     @Published var photoGallery: [Photo]? = []
@@ -33,7 +32,6 @@ class PhotoListViewModel : ObservableObject {
     // MARK: - resetPage
     func resetPage(onComplete: @escaping() -> (Void)) {
         currentPage = 1
-        //self.photoGallery.value = []
         self.photoGallery = []
         fetchData() {
             onComplete()
@@ -67,7 +65,6 @@ class PhotoListViewModel : ObservableObject {
             } else {
                 if let dataResponse = obj?.photos,
                    let photos = dataResponse.photo, photos.count > 0 {
-                    //self.photoGallery.value!  += photos
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                         self.photoGallery?.append(contentsOf: photos)
                         self.currentPage += 1
