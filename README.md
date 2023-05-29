@@ -21,3 +21,11 @@ Xcode: 14.1
 - Before Running the project, Please install pods.
 - cd _ project Path ~
 - pod install
+
+
+
+
+
+![1](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/ff6bc69e-b4e6-4d25-a737-1215b07572c1)
+![2](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/2ac0040e-7aec-48ad-983d-d8f35e30f767)
+![Uploading 3.png…]()
