@@ -2,13 +2,13 @@
 # platform :ios, '9.0'
 
 target 'ElectroluxTaste' do
-
+pod 'Toaster'
+pod 'Alamofire'
 
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for ElectroluxTaste
-pod 'Toaster'
-pod 'Alamofire'
+
 
 end
