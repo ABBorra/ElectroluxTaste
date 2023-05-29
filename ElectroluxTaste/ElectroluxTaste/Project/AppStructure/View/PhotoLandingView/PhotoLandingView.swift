@@ -57,6 +57,13 @@ struct PhotoLandingView: View {
                     }
                    .listStyle(.plain)
                 }
+                if ((photoListViewModel.photoGallery?.count ?? 1) > 0) {
+                  
+                    NavigationLink(destination: PhotoDetailView(photoDetails: photoListViewModel.photoGallery?[selectedIndex]),
+                                   isActive: $moveToDetailScreen) {
+                        EmptyView()
+                    }
+                }
             }
             .navigationTitle("Flickr Photos")
             .searchable(text: $searchText, placement:
