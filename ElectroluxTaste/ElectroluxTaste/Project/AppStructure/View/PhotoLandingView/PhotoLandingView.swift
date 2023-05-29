@@ -20,8 +20,30 @@ struct PhotoLandingView: View {
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(),
                                                              spacing: 4), count: 3), spacing: 20) {
                     
+                    ForEach(0..<(photoListViewModel.photoGallery?.count ?? 0), id: \.self) { index in
+                        VStack{
+                            if let photo = photoListViewModel.photoGallery {
+                                
+                                PhotoDataView(photoDetails: photo[index])
+                                    .frame(height: 200)
+                                    .frame(width: 150)
+                                
+                                    .contentShape(Path(CGRect(x: 0, y: 0, width: 150, height: 200)))
+
+                            } else {
+                                Color.clear
+                                    .frame(width: 0, height: 0)
+                            }
+                        }
+                    }
+                    
                 }
-               .listStyle(.plain)
+                .listStyle(.plain)
+            }
+        }
+        .onAppear {
+            if photoListViewModel.photoGallery?.count == 0 {
+                photoListViewModel.fetchData(){ }
             }
         }
         .padding()
