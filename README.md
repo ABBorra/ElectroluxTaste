@@ -8,7 +8,7 @@ Displaying Photo gallery  in grid show  as user friendly.
 # Environment
 iOS SDK: &gt; 15.0 ,
 Swift version: &gt  5.0 ,
-Deployment Target : 15.0 
+Deployment Target : 15.0 ,
 Xcode: 14.1
 
 # Concepts Included
