@@ -33,6 +33,7 @@ struct PhotoLandingView: View {
                                         .onTapGesture {
                                             selectedIndex = index
                                             moveToDetailScreen = true
+                                            print("Tap: \(index), \(photo[index].title ?? "")")
                                         }
                                     if index == (photoListViewModel.photoGallery?.count ?? 0) - 1 {
                                         
