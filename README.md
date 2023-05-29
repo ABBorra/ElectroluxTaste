@@ -25,7 +25,7 @@ Xcode: 14.1
 
 
 
-![1](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/eb68d69c-8e26-495a-a20d-3da7a4ddf2d4)
+![Demo9](https://user-images.githubusercontent.com/116728482/198948045-c358eaec-06c0-4c38-a0b4-5d0f4ae6092b.gif)
 
 
 
