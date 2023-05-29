@@ -39,14 +39,14 @@ struct PhotoDetailDataView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.top, 8)
                 
-                Text("ID: \(photo?.id ?? "")")
+                Text("PhotoID: \(photo?.id ?? "")")
                     .foregroundColor(Color.gray)
                     .font(.custom(SecretKeys.customFontName, size: 15))
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
                 
                 Text("Owner: \(photo?.owner ?? "")")
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.gray)
                     .font(.custom(SecretKeys.customFontName, size: 15))
                     .lineLimit(1)
             }

@@ -70,8 +70,8 @@
 		5A36835E2A24ABFD008B2A28 /* PhotoDetailedView */ = {
 			isa = PBXGroup;
 			children = (
-				5A36835F2A24AD0E008B2A28 /* PhotoDetailDataView.swift */,
 				5A3683612A24AD49008B2A28 /* PhotoDetailView.swift */,
+				5A36835F2A24AD0E008B2A28 /* PhotoDetailDataView.swift */,
 				5A3683632A24AD71008B2A28 /* PhotoDetailViewModel.swift */,
 			);
 			path = PhotoDetailedView;
