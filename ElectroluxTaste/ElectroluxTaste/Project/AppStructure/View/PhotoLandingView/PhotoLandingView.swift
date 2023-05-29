@@ -29,6 +29,10 @@ struct PhotoLandingView: View {
                                     .frame(width: 150)
                                 
                                     .contentShape(Path(CGRect(x: 0, y: 0, width: 150, height: 200)))
+                                    .onTapGesture {
+                                        selectedIndex = index
+                                        moveToDetailScreen = true
+                                    }
 
                             } else {
                                 Color.clear
