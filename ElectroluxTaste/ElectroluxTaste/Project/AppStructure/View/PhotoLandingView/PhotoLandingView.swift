@@ -16,10 +16,13 @@ struct PhotoLandingView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ScrollView(.vertical, showsIndicators: true ) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(),
+                                                             spacing: 4), count: 3), spacing: 20) {
+                    
+                }
+               .listStyle(.plain)
+            }
         }
         .padding()
     }
