@@ -63,4 +63,7 @@ ElectroluxTest
 ![1](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/ff6bc69e-b4e6-4d25-a737-1215b07572c1)
 ![2](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/2ac0040e-7aec-48ad-983d-d8f35e30f767)
 
-![Demo9](https://user-images.githubusercontent.com/116728482/198948045-c358eaec-06c0-4c38-a0b4-5d0f4ae6092b.gif)
+![1](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/eece4974-71f9-40d1-9d20-df92b740660f)
+![2](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/d4d47df1-b276-4870-8654-39fd79448a03)
+![3](https://github.com/ABBorra/ElectroluxTaste/assets/116728482/65b666b7-beab-46fb-8449-2987bea3d3cb)
+
