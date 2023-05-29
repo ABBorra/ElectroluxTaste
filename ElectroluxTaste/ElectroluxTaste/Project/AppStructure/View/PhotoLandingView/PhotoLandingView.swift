@@ -34,6 +34,17 @@ struct PhotoLandingView: View {
                                             selectedIndex = index
                                             moveToDetailScreen = true
                                         }
+                                    if index == (photoListViewModel.photoGallery?.count ?? 0) - 1 {
+                                        
+                                        HStack {
+                                            Spacer()
+                                            ProgressView()
+                                                .onAppear {
+                                                    photoListViewModel.fetchData(){}
+                                                }
+                                            Spacer()
+                                        }
+                                    }
                                     
                                 } else {
                                     Color.clear
@@ -43,7 +54,7 @@ struct PhotoLandingView: View {
                         }
                         
                     }
-                   .listStyle(.plain)
+                                                                 .listStyle(.plain)
                 }
             }
             .navigationTitle("Flickr Photos")
