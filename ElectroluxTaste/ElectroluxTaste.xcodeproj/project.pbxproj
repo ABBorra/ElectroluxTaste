@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4142E28CE84CAB9F6DB4649E /* Pods_ElectroluxTaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A92BBAF59CB75BD3C46E06 /* Pods_ElectroluxTaste.framework */; };
 		5A36835D2A249481008B2A28 /* PhotoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36835C2A249481008B2A28 /* PhotoDataView.swift */; };
+		5A3683602A24AD0E008B2A28 /* PhotoDetailDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36835F2A24AD0E008B2A28 /* PhotoDetailDataView.swift */; };
+		5A3683622A24AD49008B2A28 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3683612A24AD49008B2A28 /* PhotoDetailView.swift */; };
+		5A3683642A24AD71008B2A28 /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3683632A24AD71008B2A28 /* PhotoDetailViewModel.swift */; };
 		5A5057152A2486D000F4D415 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5057142A2486D000F4D415 /* SecretKeys.swift */; };
 		5A5057182A24872F00F4D415 /* ApiUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5057172A24872F00F4D415 /* ApiUrls.swift */; };
 		5A50571C2A2487E900F4D415 /* PhotosApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50571B2A2487E900F4D415 /* PhotosApiRepository.swift */; };
@@ -26,6 +29,9 @@
 		2A816DD03D47CF2344AE04D4 /* Pods-ElectroluxTaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectroluxTaste.release.xcconfig"; path = "Target Support Files/Pods-ElectroluxTaste/Pods-ElectroluxTaste.release.xcconfig"; sourceTree = "<group>"; };
 		47A92BBAF59CB75BD3C46E06 /* Pods_ElectroluxTaste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectroluxTaste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A36835C2A249481008B2A28 /* PhotoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataView.swift; sourceTree = "<group>"; };
+		5A36835F2A24AD0E008B2A28 /* PhotoDetailDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailDataView.swift; sourceTree = "<group>"; };
+		5A3683612A24AD49008B2A28 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		5A3683632A24AD71008B2A28 /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModel.swift; sourceTree = "<group>"; };
 		5A5057142A2486D000F4D415 /* SecretKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
 		5A5057172A24872F00F4D415 /* ApiUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrls.swift; sourceTree = "<group>"; };
 		5A50571B2A2487E900F4D415 /* PhotosApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosApiRepository.swift; sourceTree = "<group>"; };
@@ -59,6 +65,16 @@
 				47A92BBAF59CB75BD3C46E06 /* Pods_ElectroluxTaste.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A36835E2A24ABFD008B2A28 /* PhotoDetailedView */ = {
+			isa = PBXGroup;
+			children = (
+				5A36835F2A24AD0E008B2A28 /* PhotoDetailDataView.swift */,
+				5A3683612A24AD49008B2A28 /* PhotoDetailView.swift */,
+				5A3683632A24AD71008B2A28 /* PhotoDetailViewModel.swift */,
+			);
+			path = PhotoDetailedView;
 			sourceTree = "<group>";
 		};
 		5A5057102A24851000F4D415 /* Project */ = {
@@ -161,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				5A50572A2A248BDD00F4D415 /* PhotoLandingView */,
+				5A36835E2A24ABFD008B2A28 /* PhotoDetailedView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,11 +354,14 @@
 				5A50571F2A24888400F4D415 /* Request.swift in Sources */,
 				5A62886D2A246D2400A0EE08 /* PhotoLandingView.swift in Sources */,
 				5A50571C2A2487E900F4D415 /* PhotosApiRepository.swift in Sources */,
+				5A3683602A24AD0E008B2A28 /* PhotoDetailDataView.swift in Sources */,
 				5A5057282A248B4600F4D415 /* PhotoListViewModel.swift in Sources */,
 				5A36835D2A249481008B2A28 /* PhotoDataView.swift in Sources */,
 				5A5057222A2488C700F4D415 /* NetworkReachablity.swift in Sources */,
+				5A3683622A24AD49008B2A28 /* PhotoDetailView.swift in Sources */,
 				5A62886B2A246D2400A0EE08 /* ElectroluxTasteApp.swift in Sources */,
 				5A5057252A248AB000F4D415 /* PhotoListModel.swift in Sources */,
+				5A3683642A24AD71008B2A28 /* PhotoDetailViewModel.swift in Sources */,
 				5A5057152A2486D000F4D415 /* SecretKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
