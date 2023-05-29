@@ -72,7 +72,6 @@ struct PhotoLandingView: View {
                     photoListViewModel.fetchData(){ }
                 }
             }
-            .padding()
         }
     }
 }
