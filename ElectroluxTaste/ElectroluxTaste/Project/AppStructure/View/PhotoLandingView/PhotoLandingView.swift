@@ -43,10 +43,19 @@ struct PhotoLandingView: View {
                         }
                         
                     }
-                                                                 .listStyle(.plain)
+                   .listStyle(.plain)
                 }
             }
             .navigationTitle("Flickr Photos")
+            .searchable(text: $searchText, placement:
+                    .navigationBarDrawer(displayMode: .always),
+                        prompt: SecretKeys.defaultSearchTag)
+            
+            .onChange(of: searchText) {  search in
+                
+                photoListViewModel.searchImage = search
+                photoListViewModel.resetPage { }
+            }
             .onAppear {
                 if photoListViewModel.photoGallery?.count == 0 {
                     photoListViewModel.fetchData(){ }
