@@ -10,6 +10,7 @@ import Alamofire
 
 // MARK: - Internet Connectivity
 class NetworkReachablity {
+    
     class func isReachable() -> Bool {
         return NetworkReachabilityManager()!.isReachable
     }

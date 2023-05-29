@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Base url.
 struct ApiUrls {
     static var baseUrl: String {
         return "https://api.flickr.com/services/rest?"

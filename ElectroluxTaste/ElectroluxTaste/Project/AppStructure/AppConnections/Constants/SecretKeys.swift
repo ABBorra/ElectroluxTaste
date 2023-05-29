@@ -12,5 +12,6 @@ class SecretKeys {
     static var secretKey = "56bb9d95aff217dc"
     static var serviceName = "flickr.photos.search"
     static var defaultSearchTag = "Electrolux"
+    /* Used font Family Name*/
     static var customFontName = "Montserrat"
 }

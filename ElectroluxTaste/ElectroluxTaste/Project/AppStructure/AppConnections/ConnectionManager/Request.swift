@@ -7,7 +7,9 @@
 
 import Foundation
 
+// MARK: - Api 
 class Request {
+    
     static func get<T: Decodable>(str: String, type: T.Type, completionHandler: @escaping (_ obj:T?, _ error: Error? )  -> ())  {
         guard let url = URL(string: str) else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in

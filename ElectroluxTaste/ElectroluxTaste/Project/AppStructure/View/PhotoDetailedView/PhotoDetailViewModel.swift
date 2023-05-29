@@ -30,7 +30,8 @@ class PhotoDetailViewModel: ObservableObject {
     }
     
     // MARK: -Fetch Image
-    func downLoadImgeFromDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+    func downLoadImgeFromDataFromUrl(url: URL,
+                                     completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             completion(data, response, error)
         }.resume()
