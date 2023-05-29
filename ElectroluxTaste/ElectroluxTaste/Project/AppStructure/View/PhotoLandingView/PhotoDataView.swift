@@ -46,6 +46,7 @@ struct PhotoDataView: View {
     }
 }
 
+// MARK: - Previews
 struct PhotoDataView_Previews: PreviewProvider {
     static var previews: some View {
         PhotoDataView()

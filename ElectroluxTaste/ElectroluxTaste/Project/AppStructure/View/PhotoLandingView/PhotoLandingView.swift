@@ -24,7 +24,7 @@ struct PhotoLandingView: View {
                         ForEach(0..<(photoListViewModel.photoGallery?.count ?? 0), id: \.self) { index in
                             VStack{
                                 if let photo = photoListViewModel.photoGallery {
-                                    
+                                    /* Updating UI in below frame */
                                     PhotoDataView(photoDetails: photo[index])
                                         .frame(height: 200)
                                         .frame(width: 150)
@@ -33,7 +33,6 @@ struct PhotoLandingView: View {
                                         .onTapGesture {
                                             selectedIndex = index
                                             moveToDetailScreen = true
-                                            print("Tap: \(index), \(photo[index].title ?? "")")
                                         }
                                     if index == (photoListViewModel.photoGallery?.count ?? 0) - 1 {
                                         
@@ -58,7 +57,7 @@ struct PhotoLandingView: View {
                    .listStyle(.plain)
                 }
                 if ((photoListViewModel.photoGallery?.count ?? 1) > 0) {
-                  
+                    
                     NavigationLink(destination: PhotoDetailView(photoDetails: photoListViewModel.photoGallery?[selectedIndex]),
                                    isActive: $moveToDetailScreen) {
                         EmptyView()
@@ -84,6 +83,7 @@ struct PhotoLandingView: View {
     }
 }
 
+// MARK: - Previews
 struct PhotoLandingView_Previews: PreviewProvider {
     static var previews: some View {
         PhotoLandingView()
