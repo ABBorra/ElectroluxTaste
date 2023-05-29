@@ -6,8 +6,8 @@ Displaying Photo gallery  in grid show  as user friendly.
 # iOS MVVM
 
 # Environment
-iOS SDK: &gt; 15.0
-Swift version: &gt  5.0
+iOS SDK: &gt; 15.0 ,
+Swift version: &gt  5.0 , 
 Xcode: 14.1
 
 # Concepts Included
