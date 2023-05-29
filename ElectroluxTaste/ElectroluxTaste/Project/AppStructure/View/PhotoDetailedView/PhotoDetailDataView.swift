@@ -27,7 +27,7 @@ struct PhotoDetailDataView: View {
                     
                 },
                            placeholder: {
-                    Image("img")
+                    Image("")
                 })
                 
                 
