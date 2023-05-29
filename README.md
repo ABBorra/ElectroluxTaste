@@ -23,7 +23,39 @@ Xcode: 14.1
 - pod install
 
 
-
+```
+ElectroluxTest
+├─ Modules
+│  │ └─ PhotoList
+│  │    ├─ Model
+│  │    │  └─ PhotoListModel
+│  │    ├─ Views
+│  │    │  └─ PhotoLandingView
+│  │    ├─ ViewModel
+│  │    │  └─ PhotoListViewModel
+│  │    │
+│  │    └─ View
+│  │       └─ PhotosListViewController
+│  └─ PhotoDetailsView
+|       ├─ ViewModel
+|       |    └─ PhotoDeatilViewModel
+|       └─ View
+|           └─ PhotosListDetailedView
+└─ AppConnections
+   ├─ Constants
+   │  └─ Secrets
+   ├
+   └─ ConnectionManager
+   |--- Request
+   ├─ ApiRepository
+   │  ├─ PhotosApiRepository
+   │  │  └─  PhotosApiRepository
+   │  │    
+   │  └─ ApiUrl
+   └─ Util
+      |
+      └─ NetWorReachability
+```
 
 # Screenshots
 
