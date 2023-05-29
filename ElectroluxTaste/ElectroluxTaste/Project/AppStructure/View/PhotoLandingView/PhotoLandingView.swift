@@ -14,6 +14,7 @@ struct PhotoLandingView: View {
     @State private var searchText: String = ""
     @StateObject var photoListViewModel = PhotoListViewModel()
     
+    // MARK: - View
     var body: some View {
         NavigationView {
             VStack {

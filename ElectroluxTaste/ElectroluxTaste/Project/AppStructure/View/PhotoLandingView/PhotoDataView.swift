@@ -10,6 +10,7 @@ import SwiftUI
 struct PhotoDataView: View {
     var photoDetails: Photo?
     
+    // MARK: - View
     var body: some View {
         GeometryReader { proxy in
             

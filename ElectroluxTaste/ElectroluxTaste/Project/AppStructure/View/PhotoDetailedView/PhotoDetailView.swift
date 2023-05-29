@@ -12,6 +12,8 @@ struct PhotoDetailView: View {
     
     var photoDetails: Photo?
     @StateObject var photoDetailViewModel = PhotoDetailViewModel()
+    
+    // MARK: - View
     var body: some View {
         Spacer()
         

@@ -11,6 +11,7 @@ struct PhotoDetailDataView: View {
     
     var photo: Photo?
     
+    // MARK: - View
     var body: some View {
         GeometryReader { proxy in
             VStack(alignment: .leading, spacing: 6) {
